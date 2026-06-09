@@ -1,185 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Md. Kausar Babu | Competitive Programmer & Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Kausar Babu — Portfolio</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <div class="logo">&lt;Kausar /&gt;</div>
-    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-    <div class="nav-links" id="navLinks">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#cp" class="nav-link">CP</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#club" class="nav-link">Club</a>
-      <a href="#youtube" class="nav-link">YouTube</a>
-      <a href="#certs" class="nav-link">Certs</a>
-      <a href="#gallery" class="nav-link">Gallery</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </div>
-  </div>
-</nav>
+  <!--NAVIGATION-->
+  <nav class="navbar">
+    <div class="nav-logo">Zoror<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#cp">CP</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#club">Club</a></li>
+      <li><a href="#youtube">YouTube</a></li>
+      <li><a href="#certificates">Certs</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<main>
-  <section id="home" class="hero">
+  <!--intro -->
+  <section class="intro" id="intro">
+
+    <div class="intro-blob blob-1"></div>
+    <div class="intro-blob blob-2"></div>
+    <div class="grid-overlay"></div>
+
+    <div class="intro-content">
+      <div class="intro-text">
+
+        <h1 class="intro-name">Md. Kausar<br /><span class="accent">Babu</span></h1>
+
+        <div class="intro-titles">
+          <span class="title-tag">Executive @ Shohoj Coding</span>
+          <span class="title-tag">Competitive Programmer</span>
+          <span class="title-tag">CSE Undergraduate</span>
+          <span class="title-tag">Problem Solver</span>
+        </div>
+
+        <p class="intro-intro">
+          Turning complex problems into elegant code. Passionate about algorithms,
+          data structures, and building software that matters —
+          one problem at a time.
+        </p>
+
+        <!-- Social icons: LinkedIn first, then GitHub, YouTube only -->
+        <div class="intro-socials">
+          <a href="https://www.linkedin.com/in/kausar-babu/" target="_blank" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/kausarr-0" target="_blank" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://www.youtube.com/@CodeConnectt" target="_blank" aria-label="YouTube"><i
+              class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="intro-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+      </div>
+
+      <!-- dp -->
+      <div class="intro-image-wrap">
+        <div class="image-ring ring-outer"></div>
+        <div class="image-ring ring-inner"></div>
+        <img src="images/dp.jpg" alt="Md. Kausar Babu" class="intro-img" />
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+
+  </section>
+
+  <!--about -->
+  <section class="section about-section" id="about">
     <div class="container">
-      <div class="hero-grid">
-        <div data-aos="fade-right">
-          <span class="section-tag"><i class="fas fa-terminal"></i> portfolio_2025</span>
-          <h1 style="font-size: 3rem; font-weight: 800; margin: 16px 0;">Md. Kausar Babu</h1>
-          <div class="typing-wrap"><span id="typed-text"></span><span class="cursor">|</span></div>
-          <p><i class="fas fa-map-pin"></i> Rajshahi, Bangladesh · CSE Undergraduate</p>
-          <div class="hero-badge-group">
-            <span class="hero-badge"><i class="fas fa-trophy"></i> ICPC Regional</span>
-            <span class="hero-badge"><i class="fas fa-code"></i> 3★ CodeChef</span>
-            <span class="hero-badge"><i class="fas fa-chalkboard-user"></i> Executive @ Shohoj Coding</span>
-          </div>
-          <div class="hero-btns" style="margin-top: 28px; display: flex; gap: 16px;">
-            <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Contact</a>
-            <a href="#cp" class="btn btn-outline"><i class="fas fa-chart-line"></i> CP Stats</a>
-          </div>
-          <div class="hero-socials" style="display: flex; gap: 18px; margin-top: 32px;">
-            <a href="https://github.com/kausarr-0" target="_blank"><i class="fab fa-github fa-xl"></i></a>
-            <a href="https://codeforces.com/profile/Zoror" target="_blank"><i class="fas fa-code fa-xl"></i></a>
-            <a href="https://www.youtube.com/@CodeConnectt" target="_blank"><i class="fab fa-youtube fa-xl"></i></a>
-            <a href="mailto:kausarbabu78@gmail.com"><i class="fas fa-envelope fa-xl"></i></a>
+
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+
+      <div class="about-grid">
+        <div class="about-text-col">
+          <p>
+            I started programming out of curiosity about how software and websites work.
+            Over time, solving problems through code became both a challenge and a passion for me.
+          </p>
+          <p>
+            Competitive Programming helps me improve my problem-solving skills, logical thinking,
+            and ability to work under pressure.
+          </p>
+          <p>
+            My goal is to become a skilled Software Engineer and contribute to impactful technology
+            projects while continuously improving my problem-solving and development skills.
+          </p>
+
+          <div class="about-info-row">
+            <div class="info-chip"><i class="fa-solid fa-university"></i> Varendra University</div>
+            <div class="info-chip"><i class="fa-solid fa-graduation-cap"></i> CSE — 6th Semester</div>
+            <div class="info-chip"><i class="fa-solid fa-location-dot"></i> Rajshahi, Bangladesh</div>
           </div>
         </div>
-        <div data-aos="fade-left">
-          <div class="hero-img-ring">
-            <img class="hero-img" src="https://drive.google.com/uc?export=view&id=1VV7LmMSag4BG-Yy40b9QRf_FYKr3ETAu" alt="Md. Kausar Babu" referrerpolicy="no-referrer">
-          </div>
+
+        <div class="about-interests-col">
+          <h3 class="interests-heading">Areas of Interest</h3>
+          <ul class="interests-list">
+            <li><i class="fa-solid fa-chess-knight"></i> Competitive Programming</li>
+            <li><i class="fa-solid fa-sitemap"></i> Algorithms</li>
+            <li><i class="fa-solid fa-database"></i> Data Structures</li>
+            <li><i class="fa-solid fa-code"></i> Software Development</li>
+            <li><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about">
+  <!-- skills -->
+  <section class="section skills-section" id="skills">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">// about me</span>
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="hero-grid" style="grid-template-columns: 1fr 1fr; gap: 3rem;">
-        <div data-aos="fade-right">
-          <p style="color: var(--text-dim);">I started programming out of curiosity about how software and websites work. Over time, solving problems through code became both a challenge and a passion for me. Competitive Programming helps me improve logical thinking, and my goal is to become a skilled Software Engineer while contributing to impactful technology.</p>
-          <div style="margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-            <div><span class="section-tag">University</span><br><strong>Varendra University</strong></div>
-            <div><span class="section-tag">Department</span><br><strong>CSE (6th Sem)</strong></div>
-            <div><span class="section-tag">Role</span><br><strong>Executive @ Shohoj Coding</strong></div>
-            <div><span class="section-tag">Problem solver</span><br><strong>700+ problems</strong></div>
-          </div>
-        </div>
-        <div data-aos="fade-left">
-          <h3>Areas of Interest</h3>
-          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0;">
-            <span style="background: rgba(95,140,255,0.1); padding: 6px 16px; border-radius: 40px;"><i class="fas fa-code-branch"></i> CP</span>
-            <span style="background: rgba(95,140,255,0.1); padding: 6px 16px; border-radius: 40px;"><i class="fas fa-brain"></i> Algorithms</span>
-            <span style="background: rgba(95,140,255,0.1); padding: 6px 16px; border-radius: 40px;"><i class="fas fa-database"></i> DSA</span>
-            <span style="background: rgba(95,140,255,0.1); padding: 6px 16px; border-radius: 40px;"><i class="fas fa-laptop-code"></i> Web Dev</span>
-          </div>
-          <div class="hero-badge-group" style="justify-content: space-around;">
-            <div style="text-align: center;"><span class="stat-num" id="problemsCount" data-count="700">0</span><span>+</span><br><span style="font-size: 0.8rem;">Solved</span></div>
-            <div style="text-align: center;"><span class="stat-num" id="contestsCount" data-count="190">0</span><span>+</span><br><span style="font-size: 0.8rem;">Contests</span></div>
-            <div style="text-align: center;"><span>3★</span><br><span style="font-size: 0.8rem;">CodeChef</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="skills" style="background: #0c0f18;">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up"><span class="section-tag">// tech stack</span><h2 class="section-title">Skills & Proficiency</h2></div>
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+
       <div class="skills-grid">
-        <div><h3>Languages</h3>
-          <div class="skill-item"><div>C / C++</div><div class="skill-bar-bg"><div class="skill-fill" data-width="90"></div></div></div>
-          <div class="skill-item"><div>Java</div><div class="skill-bar-bg"><div class="skill-fill" data-width="70"></div></div></div>
-          <div class="skill-item"><div>Python</div><div class="skill-bar-bg"><div class="skill-fill" data-width="65"></div></div></div>
+
+        <div class="glass-card skills-card">
+          <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+
+          <div class="skill-item">
+            <div class="skill-label"><span>C / C++</span><span class="skill-pct">90%</span></div>
+            <div class="progress-track">
+              <div class="progress-fill" style="--pct:90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Java</span><span class="skill-pct">70%</span></div>
+            <div class="progress-track">
+              <div class="progress-fill" style="--pct:70%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Python</span><span class="skill-pct">75%</span></div>
+            <div class="progress-track">
+              <div class="progress-fill" style="--pct:75%"></div>
+            </div>
+          </div>
         </div>
-        <div><h3>Technologies</h3>
-          <div class="skill-item"><div>HTML/CSS</div><div class="skill-bar-bg"><div class="skill-fill" data-width="80"></div></div></div>
-          <div class="skill-item"><div>JavaScript</div><div class="skill-bar-bg"><div class="skill-fill" data-width="65"></div></div></div>
-          <div class="skill-item"><div>Linux/MySQL</div><div class="skill-bar-bg"><div class="skill-fill" data-width="70"></div></div></div>
+
+        <div class="glass-card skills-card">
+          <h3><i class="fa-solid fa-layer-group"></i> Technologies</h3>
+
+          <div class="skill-item">
+            <div class="skill-label"><span>HTML</span><span class="skill-pct">85%</span></div>
+            <div class="progress-track">
+              <div class="progress-fill" style="--pct:85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>CSS</span><span class="skill-pct">80%</span></div>
+            <div class="progress-track">
+              <div class="progress-fill" style="--pct:80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>JavaScript</span><span class="skill-pct">65%</span></div>
+            <div class="progress-track">
+              <div class="progress-fill" style="--pct:65%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Linux</span><span class="skill-pct">72%</span></div>
+            <div class="progress-track">
+              <div class="progress-fill" style="--pct:72%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>MySQL</span><span class="skill-pct">68%</span></div>
+            <div class="progress-track">
+              <div class="progress-fill" style="--pct:68%"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--cp -->
+  <section class="section cp-section" id="cp">
+    <div class="container">
+
+      <h2 class="section-title">My CP <span class="accent">Journey</span></h2>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-check-double"></i></div>
+          <div class="stat-number">1000<span>+</span></div>
+          <div class="stat-label">Problems Solved</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+          <div class="stat-number">250<span>+</span></div>
+          <div class="stat-label">Contests Participated</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-brands fa-cuttlefish"></i></div>
+          <div class="stat-number">Pupil</div>
+          <div class="stat-label">@ Codeforces</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="stat-number">3 <span>Star</span></div>
+          <div class="stat-label">@ CodeChef</div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="cp">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up"><span class="section-tag">// competitive programming</span><h2 class="section-title">Online Judges</h2></div>
-      <div class="cp-grid" id="cpGrid">
-        <a href="https://codeforces.com/profile/Zoror" target="_blank" class="cp-card"><i class="fab fa-codepen"></i><h3>Codeforces</h3><div class="cp-rank" style="color:#7bc96f;">Pupil</div><div>✔ 700+ solved / 150+ contests</div></a>
-        <a href="https://www.codechef.com/users/zoror" target="_blank" class="cp-card"><i class="fas fa-fire"></i><h3>CodeChef</h3><div class="cp-rank" style="color:#ffbf00;">3★</div><div>200+ problems, 40+ contests</div></a>
-        <a href="https://atcoder.jp/users/Zoror" target="_blank" class="cp-card"><i class="fas fa-atom"></i><h3>AtCoder</h3><div>Handle: Zoror · Active</div></a>
-        <a href="https://leetcode.com/u/kausar77/" target="_blank" class="cp-card"><i class="fas fa-code"></i><h3>LeetCode</h3><div>kausar77 · 70+ solutions</div></a>
-        <a href="https://vjudge.net/user/kausar78" target="_blank" class="cp-card"><i class="fas fa-gavel"></i><h3>VJudge</h3><div>kausar78 · Consistent</div></a>
+      <h3 class="sub-heading">Online Judge Profiles</h3>
+      <div class="oj-grid">
+
+        <a href="https://codeforces.com/profile/Zoror" target="_blank" class="oj-card glass-card">
+          <div class="oj-icon cf-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="oj-info">
+            <span class="oj-name">Codeforces</span>
+            <span class="oj-handle">@Zoror</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square oj-arrow"></i>
+        </a>
+
+        <a href="https://www.codechef.com/users/zoror" target="_blank" class="oj-card glass-card">
+          <div class="oj-icon cc-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="oj-info">
+            <span class="oj-name">CodeChef</span>
+            <span class="oj-handle">@zoror</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square oj-arrow"></i>
+        </a>
+
+        <a href="https://atcoder.jp/users/Zoror" target="_blank" class="oj-card glass-card">
+          <div class="oj-icon at-icon"><i class="fa-solid fa-atom"></i></div>
+          <div class="oj-info">
+            <span class="oj-name">AtCoder</span>
+            <span class="oj-handle">@Zoror</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square oj-arrow"></i>
+        </a>
+
+        <a href="https://leetcode.com/u/kausar77/" target="_blank" class="oj-card glass-card">
+          <div class="oj-icon lc-icon"><i class="fa-solid fa-fire"></i></div>
+          <div class="oj-info">
+            <span class="oj-name">LeetCode</span>
+            <span class="oj-handle">@kausar77</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square oj-arrow"></i>
+        </a>
+
+        <a href="https://vjudge.net/user/kausar78" target="_blank" class="oj-card glass-card">
+          <div class="oj-icon vj-icon"><i class="fa-solid fa-gavel"></i></div>
+          <div class="oj-info">
+            <span class="oj-name">VJudge</span>
+            <span class="oj-handle">@kausar78</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square oj-arrow"></i>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <section id="projects" style="background:#0c0f18;">
+  <!--project -->
+  <section class="section projects-section" id="projects">
     <div class="container">
-      <div class="section-header"><span class="section-tag">// featured</span><h2 class="section-title">Project Showcase</h2></div>
-      <div class="project-card" data-aos="flip-up">
-        <div class="project-left"><span class="section-tag">OOP · C++</span><h2 style="margin:12px 0;">Club Management System</h2><p>Member registration, search, activity tracking using OOP principles, file handling, and data structures.</p><div style="margin: 1rem 0; display: flex; gap: 10px;"><span class="hero-badge">C++</span><span class="hero-badge">OOP</span><span class="hero-badge">DSA</span></div><a href="https://github.com/kausarr-0/Club-Management-System-project-in-cpp-OOP" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a></div>
-        <div class="project-right"><pre style="color:#cbd5e6; font-family: monospace;">class ClubManager {<br>  registerMember(m);<br>  searchMember(name);<br>  trackActivity(a);<br>};</pre></div>
+
+      <h2 class="section-title">Featured <span class="accent">Work</span></h2>
+
+      <div class="project-grid">
+        <div class="project-card glass-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="project-tech-tag">C++</div>
+          </div>
+          <h3 class="project-title">Club Management System</h3>
+          <p class="project-desc">
+            Designed and implemented using Object-Oriented Programming principles.
+            Provides a structured system to manage club operations efficiently.
+          </p>
+          <ul class="project-features">
+            <li><i class="fa-solid fa-check"></i> Member Registration</li>
+            <li><i class="fa-solid fa-check"></i> Search Functionality</li>
+            <li><i class="fa-solid fa-check"></i> Activity Tracking</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/kausarr-0/Club-Management-System-project-in-cpp-OOP" target="_blank"
+              class="btn btn-sm">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- extra activities -->
+  <section class="section club-section" id="club">
+    <div class="container">
+
+
+      <h2 class="section-title">Programming <span class="accent">Club</span></h2>
+
+      <div class="club-card glass-card">
+        <div class="club-left">
+          <img src="images/club-logo.png" alt="Varendra University Programming Club Logo" class="club-logo" />
+          <div class="club-info">
+            <h3>Varendra University Programming Club</h3>
+            <span class="role-badge">Problem Setter &amp; Mentor</span>
+            <p>
+              Actively contribute to contest organization, problem setting, mentoring junior programmers,
+              and promoting competitive programming culture across the university.
+            </p>
+          </div>
+        </div>
+        <div class="club-right">
+          <img src="images/club-event.jpg" alt="Club Event Photo" class="club-event-img" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- my yt channel-->
+  <section class="section yt-section" id="youtube">
+    <div class="container">
+
+      <h2 class="section-title">My Youtube <span class="accent">Channel</span></h2>
+
+      <div class="yt-card glass-card">
+        <div class="yt-icon-wrap">
+          <i class="fa-brands fa-youtube yt-big-icon"></i>
+        </div>
+        <div class="yt-content">
+          <h3>CodeConnect</h3>
+          <p>
+            Competitive Programming Tutorials, Contest Editorials, and Educational Coding Content
+            designed to help programmers level up their problem-solving skills.
+          </p>
+          <a href="https://www.youtube.com/@CodeConnectt" target="_blank" class="btn btn-primary">
+            <i class="fa-brands fa-youtube"></i> Visit Channel
+          </a>
+        </div>
+        <div class="yt-deco"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- certificates or achievement -->
+  <section class="section certs-section" id="certificates">
+    <div class="container">
+
+      <h2 class="section-title">My <span class="accent">Certificates</span></h2>
+
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card">
+          <div class="cert-img-wrap">
+            <img src="images/icpc_certificate.png" alt="Certificate 1" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <p class="cert-title">ICPC Asia Dhaka Regional Contest 2025</p>
+        </div>
+
+        <div class="cert-card glass-card">
+          <div class="cert-img-wrap">
+            <img src="images/duet_IUPC_certificate.png" alt="Certificate 2" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <p class="cert-title">DUET IUPC 2025</p>
+        </div>
+
+        <div class="cert-card glass-card">
+          <div class="cert-img-wrap">
+            <img src="images/buet_iupc_cer.png" alt="Certificate 3" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <p class="cert-title">BUET IUPC 2026</p>
+        </div>
+
+        <div class="cert-card glass-card">
+          <div class="cert-img-wrap">
+            <img src="images/ch4_certificate.jpg" alt="Certificate 4" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <p class="cert-title">Code Harbor: Navigating Challenges - Season 4 (1st Runner-Up)</p>
+        </div>
+
+        <div class="cert-card glass-card">
+          <div class="cert-img-wrap">
+            <img src="images/one_coder.jpg" alt="Certificate 5" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <p class="cert-title">The OneCoder Challenge - Season 1 (2nd Runner-Up)</p>
+        </div>
+
+        <div class="cert-card glass-card">
+          <div class="cert-img-wrap">
+            <img src="images/Certificate_of_Leadership.jpeg" alt="Certificate 6" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <p class="cert-title">Certificate of Leadership, Shohoj Coding</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="club">
+  <!-- achievement -->
+  <section class="section gallery-section" id="gallery">
     <div class="container">
-      <div class="section-header"><span class="section-tag">// campus impact</span><h2 class="section-title">Varendra University Programming Club</h2></div>
-      <div class="club-card" data-aos="zoom-in">
-        <div style="padding: 2rem;"><img src="https://drive.google.com/uc?export=view&id=1TGu_Zrqs0WGXPmOTgtZZ53gj7udQ-Hfl" style="width: 80px; border-radius: 20px;" referrerpolicy="no-referrer"><h3 style="margin: 16px 0;">Problem Setter & Mentor</h3><p>Contest organizer, problem setting, mentoring juniors. Promoting CP culture at VU.</p><div><span class="hero-badge">ICPC Trainer</span><span class="hero-badge">Contest Curator</span></div></div>
-        <div><img src="https://drive.google.com/uc?export=view&id=1_GSfVu8Wwr8JMV1fW8qdkde0Rx8fIKkI" style="height: 100%; width: 100%; object-fit: cover;" referrerpolicy="no-referrer"></div>
+
+      <h2 class="section-title">Achievement <span class="accent">Gallery</span></h2>
+
+      <div class="masonry-grid">
+
+        <div class="masonry-item tall">
+          <img src="images/icpc_2025_team.jpg" alt="ICPC 2025 Team" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          <p class="gallery-title">ICPC Asia Dhaka Regional</p>
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/duet_iupc_team.jpg" alt="DUET IUPC Team" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          <p class="gallery-title">DUET IUPC 2025</p>
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/buet_iupc_t.jpeg" alt="BUET IUPC Team" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          <p class="gallery-title">BUET IUPC 2026</p>
+        </div>
+
+        <div class="masonry-item wide">
+          <img src="images/pupil_prize.jpg" alt="Codeforces Award" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          <p class="gallery-title">Codeforces Pupil Award</p>
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/ch4_team.jpeg" alt="CH4 Team" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          <p class="gallery-title">Award: 1st Runner-Up, Code Harbor Season 4</p>
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/chs3_prize.jpg" alt="CHS3 Award" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          <p class="gallery-title">Award: 2nd Runner-Up, Code Harbor Season 3</p>
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/onec1.jpg" alt="OneCoder Award" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          <p class="gallery-title">Award: 2nd Runner-Up, OneCoder Challenge Season 1</p>
+        </div>
+
+        <div class="masonry-item wide">
+          <img src="images/VU_KRNfinity.jpg" alt="ICPC Preparation Moment" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          <p class="gallery-title">ICPC Preli Greetings</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="youtube" style="background:#0c0f18;">
+  <!-- contact me -->
+  <section class="section contact-section" id="contact">
     <div class="container">
-      <div class="yt-card" data-aos="fade-up"><div><i class="fab fa-youtube" style="font-size: 3.5rem; color: #ff3e3e;"></i></div><div><h2>CodeConnect</h2><p>CP tutorials, contest editorials & educational content for aspiring programmers.</p><div><span class="hero-badge">DP Tutorials</span><span class="hero-badge">Contest Analysis</span></div></div><a href="https://www.youtube.com/@CodeConnectt" class="btn btn-primary" style="background:#dc2626;"><i class="fab fa-youtube"></i> Subscribe</a></div>
+
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="contact-intro">
+        I'm open to opportunities, collaborations, and conversations. Feel free to reach out!
+      </p>
+
+      <div class="contact-grid">
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h4>Email</h4>
+          <a href="mailto:kausarbabu78@gmail.com">kausarbabu78@gmail.com</a>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <h4>Phone</h4>
+          <a href="tel:01234567881">01234567881</a>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h4>Location</h4>
+          <span>Rajshahi, Bangladesh</span>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <section id="certs">
+  <!-- footer -->
+  <footer class="footer">
     <div class="container">
-      <div class="section-header"><span class="section-tag">// achievements</span><h2 class="section-title">Certifications & Awards</h2></div>
-      <div class="certs-grid" id="certsGrid"></div>
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Zoror<span class="dot">.</span></div>
+          <p>Competitive Programmer · Problem Solver · CSE Undergraduate</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/kausar-babu/" target="_blank" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/kausarr-0" target="_blank" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://www.youtube.com/@CodeConnectt" target="_blank" aria-label="YouTube"><i
+              class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom"></div>
+
     </div>
-  </section>
+  </footer>
 
-  <section id="gallery" style="background:#0c0f18;">
-    <div class="container"><div class="section-header"><span class="section-tag">// moments</span><h2 class="section-title">Achievement Gallery</h2></div><div class="gallery-masonry" id="galleryMasonry"></div></div>
-  </section>
-
-  <section id="contact">
-    <div class="container"><div class="section-header"><span class="section-tag">// connect</span><h2 class="section-title">Let's Talk</h2></div>
-    <div class="hero-grid" style="grid-template-columns: 1fr 1fr;">
-      <div><i class="fas fa-envelope"></i> kausarbabu78@gmail.com<br><i class="fas fa-phone-alt"></i> +8801234567881<br><i class="fas fa-map-marker"></i> Rajshahi, Bangladesh<br><div class="hero-socials" style="margin-top: 32px;"><a href="https://github.com/kausarr-0"><i class="fab fa-github fa-2x"></i></a><a href="https://codeforces.com/profile/Zoror"><i class="fas fa-code fa-2x"></i></a><a href="https://www.youtube.com/@CodeConnectt"><i class="fab fa-youtube fa-2x"></i></a></div></div>
-      <form id="contactForm" class="contact-form"><input type="text" placeholder="Name" required><input type="email" placeholder="Email" required><textarea rows="4" placeholder="Message"></textarea><button type="submit" class="btn btn-primary full-w">Send <i class="fas fa-paper-plane"></i></button></form>
-    </div></div>
-  </section>
-</main>
-
-<footer><p>© 2025 Md. Kausar Babu — Built with vanilla <i class="fas fa-heart" style="color:#5f8cff;"></i> for the CP community</p></footer>
-<div id="backToTop"><i class="fas fa-arrow-up"></i></div>
-<div id="lightbox" class="lightbox"><img id="lightboxImg" alt=""><span id="closeLightbox" style="position:absolute; top:20px; right:30px; font-size: 2rem; cursor: pointer;">&times;</span></div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="script.js"></script>
 </body>
+
 </html>
